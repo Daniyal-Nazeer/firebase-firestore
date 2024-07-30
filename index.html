@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curd</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        h1.title {
+            text-align: center;
+            font-size: 32px;
+            font-family: monospace;
+            font-weight: 600;
+        }
+
+        form#form {
+            text-align: center;
+        }
+
+        button#addtodo_btn {
+            background: blue;
+            border: 0;
+            padding: 15px 38px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        input#toDo {
+            width: 50%;
+            height: 42px;
+            background: aliceblue;
+            border-bottom: 1px solid;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            padding: 1px 20px;
+            font-size: 18px;
+        }
+
+        input#toDo:hover {
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid;
+        }
+
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            width: 50%;
+            
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: lightgrey;
+            color: white;
+            width: 50%;
+        }
+
+        i.fa-solid.fa-trash {
+            color: red;
+            font-size: 16px;
+            padding: 5px 5px;
+        }
+
+        i.fa-solid.fa-pen-to-square {
+            font-size: 18px;
+            color: blue;
+            padding: 4px 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">Add Items</h1>
+
+    <form id="form" class="form_s">
+
+        <input type="text" id="toDo" required>
+
+        <button id="addtodo_btn">Add Todo</button>
+
+    </form>
+
+    <ul id="ul">
+
+    </ul>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
